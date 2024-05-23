@@ -1,0 +1,17 @@
+{
+  "name": "micro-frontend-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo start:live",
+    "build": "turbo build",
+    "serve": "turbo build:start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^1.11.1"
+  }
+}
