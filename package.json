@@ -1,17 +1,27 @@
 {
   "name": "micro-frontend-admin",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "turbo start:live",
-    "build": "turbo build",
-    "serve": "turbo build:start"
+    "dev": "turbo dev",
+    "dev-host": "turbo dev --filter app-host",
+    "dev-feed": "turbo dev --filter app-feed",
+    "dev-order": "turbo dev --filter app-order"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "turbo": "^1.11.1"
+   "devDependencies": {
+    "@types/mime-types": "^2.1.1",
+    "@types/node": "10.17.27",
+    "@types/prettier": "2.6.0",
+    "ts-node": "^10.9.1",
+    "turbo": "latest",
+    "typescript": "^4.8.4",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.21"
   }
 }
