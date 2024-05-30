@@ -1,6 +1,6 @@
 {
   "name": "micro-frontend-admin",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -9,7 +9,6 @@
   "scripts": {
     "dev": "turbo dev",
     "dev-host": "turbo dev --filter app-host",
-    "dev-feed": "turbo dev --filter app-feed",
     "dev-order": "turbo dev --filter app-order"
   },
    "devDependencies": {

@@ -20,6 +20,5 @@
         "runtime": "automatic"
       }
     ]
-  ],
-  "plugins": ["@vanilla-extract/babel-plugin"]
+  ]
 }

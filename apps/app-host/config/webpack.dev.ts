@@ -13,16 +13,17 @@ const developmentConfig: Configuration = {
   },
   module: {
     rules: [
-      {
-        test: /\.vanilla\.css$/i,
+     {
+        test: /\.s?css$/,
         use: [
           "style-loader",
           {
-            loader: require.resolve("css-loader"),
+            loader: "css-loader",
             options: {
-              url: false,
+              importLoaders: 1,
             },
           },
+          "postcss-loader",
         ],
       },
     ],

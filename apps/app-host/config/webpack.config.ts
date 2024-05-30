@@ -2,7 +2,6 @@ import { resolve } from "path";
 import { Configuration, DefinePlugin, container } from "webpack";
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const extensions = [".js", ".jsx", ".ts", ".tsx"];
-const { VanillaExtractPlugin } = require("@vanilla-extract/webpack-plugin");
 import { dependencies } from "../package.json";
 
 
@@ -44,7 +43,6 @@ const config: Configuration = {
       name: "appHost",
       remotes: {
         appDetail: `appDetail@${getRemoteEntry("app-detail", 30001)}`,
-        appFeed: `appFeed@${getRemoteEntry("app-feed", 30002)}`,
       },
       shared: {
         ...dependencies,
@@ -55,7 +53,6 @@ const config: Configuration = {
         },
       },
     }),
-    new VanillaExtractPlugin(),
   ],
 };
 
