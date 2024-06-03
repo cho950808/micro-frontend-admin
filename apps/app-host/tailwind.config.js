@@ -1,6 +1,7 @@
 const flattenColorPalette =
     require('tailwindcss/lib/util/flattenColorPalette').default
 const safeListFile = 'safelist.txt'
+
 module.exports = {
     mode: 'jit',
     content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./safelist.txt"],

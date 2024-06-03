@@ -1,0 +1,1 @@
+export const APP_NAME = 'Micro Frontend Admin'
