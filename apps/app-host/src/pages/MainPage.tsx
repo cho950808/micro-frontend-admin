@@ -5,7 +5,7 @@ const MainPage = () => {
   return (
     <div className="app-layout-stacked-side flex flex-auto flex-col">
           <div className="flex flex-auto min-w-0">
-              <p className='text-2xl'>asdasdasd</p>
+              <p className='text-2xl text-red-300 font-bold'>MainPage</p>
           </div>
       </div>
   );
